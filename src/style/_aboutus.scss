@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutus-page{
+.about-about{
+    margin-top: 30px;
+    padding:10px 0px 0px 65px;
+    color: gray;
+}
+.us-firstsection{
+    display: flex;
+    padding:30px 50px;
+    flex-direction: row;
+}
+.about-text{
+    width: 50%;
+    height: 500px;
+    margin:0px 20px;
+    line-height: 35px;
+}
+.about-photo{
+    text-align: center;
+    background-color: rgb(141, 141, 141);
+    border-radius: 30px;
+    padding:0px 50px;
+    width: 50%;
+    margin: 0px 20px;
+}
+.full-text{
+    line-height: 35px;
+    margin-bottom: 80px;
+}
+}
