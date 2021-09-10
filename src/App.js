@@ -1,23 +1,14 @@
 import React, { useState } from 'react';
-import Footer from './Components/Footer';
-import Basket from './Components/Basket';
-import ProductView from './Components/ProductView';
-import Categories from './Components/Categories';
+import { Route, Switch } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
-import Home from './Components/Home/Home';
 import Toolbar from './Components/Toolbar/Toolbar';
+import Home from './pages/Home';
+import Authpage from './pages/Authpage';
+import Categories from './pages/Categories';
+import Basket from './pages/Basket';
+import profile from './pages/Profile';
+import Footer from './Components/Footer';
 import './style/app.scss';
-
-// function App() {
-//     return (
-//         <div className="App-container">
-//             {/* <ProductView /> */}
-//             <Categories />
-//             {/* <Basket /> */}
-//             <Footer />
-//         </div>
-//     );
-// }
 
 const App = () => {
     const [theme, setTheme] = useState({
@@ -38,9 +29,14 @@ const App = () => {
             </div>
 
             <div className="pages">
-                <Home />
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/Categories" component={Categories} />
+                    <Route path="/Authpage" component={Authpage} />
+                    <Route path="/Basket" component={Basket} />
+                    <Route path="/Basket" component={profile} />
+                </Switch>
             </div>
-            <Categories />
             <Footer />
         </div>
     );

@@ -16,11 +16,11 @@ const BasketItem = () => {
             <div className="basket-Item-info">
                 <div className="basket-Item-number">
                     <button onClick={minusItemHandeler}>
-                        <i class="fas fa-minus"></i>
+                        <i className="fas fa-minus"></i>
                     </button>
                     <div>{numberItem}</div>
                     <button onClick={addItemHandeler}>
-                        <i class="fas fa-plus"></i>
+                        <i className="fas fa-plus"></i>
                     </button>
                 </div>
                 <div className="goods-info">

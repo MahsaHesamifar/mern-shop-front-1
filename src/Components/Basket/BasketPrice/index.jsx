@@ -3,7 +3,7 @@ const BasketPrice = () => {
         <div className="basketPrice-container">
             <div className="basketPrice-info">
                 <div>
-                    <i class="fas fa-shopping-basket"></i>
+                    <i className="fas fa-shopping-basket"></i>
                 </div>
                 <div className="basketPrice-other-info">
                     <div></div>

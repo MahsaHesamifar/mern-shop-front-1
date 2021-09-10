@@ -24,11 +24,13 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+    background-color: var(--color-3);
+    color: var(--color-0);
     .basket-Item-photo {
         width: 20%;
         height: auto; /* !!!!!!!!!!!!!!!!!!*/
         border: 1px solid gray;
-        background-color: rgb(197, 194, 194);
+        background-color: var(--color-0);
     }
     .basket-Item-info {
         width: 75%;
@@ -41,9 +43,12 @@
                 border-radius: 0.2rem;
                 border: 1px solid gray;
                 padding: 0 0.4rem;
+                background-color: var(--color-0);
+                color: var(--color-5);
             }
             button {
-                background-color: white;
+                color: var(--color-0);
+                background-color: var(--color-3);
                 border: none;
                 padding: 0.3rem;
                 &:hover {
@@ -75,8 +80,11 @@
     width: 20%;
     height: 50vh;
 
+    color: var(--color-3);
+
     .basketPrice-info {
         border: 1px solid gray;
+        background-color: var(--color-0);
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -106,8 +114,12 @@
         width: 98%;
         border: none;
         border-radius: 1rem;
-        background-color: rgb(175, 174, 174);
+        background-color: var(--color-4);
+        color: var(--color-6);
         padding: 0.5rem 2.5rem;
         margin-top: 0.5rem;
+        &:hover {
+            background-color: var(--color-7);
+        }
     }
 }
