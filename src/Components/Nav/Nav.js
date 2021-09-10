@@ -36,9 +36,9 @@ const Nav = () => {
                     </Link>
                 </li>
                 <li className="li li-profile">
-                    <div className="profile-btn">
-                        <Link to="/Authpage">P</Link>
-                    </div>
+                    <Link to="/Profile">
+                        <div className="profile-btn">P</div>
+                    </Link>
                 </li>
             </ul>
         </nav>

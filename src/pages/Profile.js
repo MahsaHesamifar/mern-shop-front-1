@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../Components/Profile/BackBtn';
+import Profile from '../Components/Profile/ProfileInfo';
 
 const profile = () => {
     return (

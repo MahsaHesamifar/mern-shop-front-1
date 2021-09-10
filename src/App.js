@@ -7,6 +7,8 @@ import Authpage from './pages/Authpage';
 import Categories from './pages/Categories';
 import Basket from './pages/Basket';
 import profile from './pages/Profile';
+import Product from './pages/product';
+import Profile from './pages/Profile';
 import Footer from './Components/Footer';
 import './style/app.scss';
 
@@ -34,7 +36,8 @@ const App = () => {
                     <Route path="/Categories" component={Categories} />
                     <Route path="/Authpage" component={Authpage} />
                     <Route path="/Basket" component={Basket} />
-                    <Route path="/Basket" component={profile} />
+                    <Route path="/Profile" component={profile} />
+                    <Route path="/Product" component={Product} />
                 </Switch>
             </div>
             <Footer />

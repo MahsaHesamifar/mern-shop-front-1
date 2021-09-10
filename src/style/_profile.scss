@@ -2,70 +2,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .info-box {
+}
+.info-box {
     display: flex;
     flex-direction: row;
     width: 55%;
     margin-top: 70px;
     padding: 10px 5px;
     height: 500px;
-    background-color: rgb(187, 187, 187);
+    background-color: var(--color-3);
+    color: var(--color-1);
     border-radius: 20px;
-  }
-  .info-box h4{
-      width: 100%;
-      display: inline;
-      align-items: center;
-      text-align: center;
-      margin-top: 20px;
-      margin-left: 40px;
-      padding-bottom: 80px;
-      color: gray;
-  }
-  .personal-info {
+}
+.info-box h4 {
+    width: 100%;
+    display: inline;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-bottom: 80px;
+    color: var(--color-4);
+}
+.personal-info {
     display: flex;
     width: 100%;
     flex-direction: column;
     border-radius: 10px;
-    
-  }
-  .info-text{
-      width: 90%;
-      height: 40px;
-      border-radius: 20px;
-      padding:10px 20px;
-      color: gray;
-      background-color: azure;
-  }
-  .info-text , .info-box lable{
-      margin: 5px 20px;
-  }
-  .profile-avatar{
-    
-      width: 90%;
-      height: 180px;
-      background-color: rgb(117, 117, 117);
-      border-radius: 20px;
-      text-align: center;
-      
-  }
-  .profile-secondsection{
-      width: 25%;
-      margin: 20px;
-      height: 450px;
-      position: relative;;
-     
-  }
-  .profile-logout{
+}
+.info-text {
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--color-8);
+    background-color: var(--color-1);
+}
+.info-text,
+.info-box lable {
+    margin: 5px 20px;
+}
+.profile-avatar {
+    width: 90%;
+    height: 180px;
+    background-color: var(--color-8);
+    border-radius: 20px;
+    text-align: center;
+}
+.profile-secondsection {
+    width: 25%;
+    margin: 20px;
+    height: 450px;
+    position: relative;
+}
+.profile-logout {
     position: absolute;
     bottom: 0;
     left: 40px;
-  }
+}
 
-  .profile-logout button{
-    background-color: rgb(187, 187, 187); 
-    color: rgb(105, 105, 105); 
-    border: none;
-    font-size: 20px;
-  }
+.profile-logout {
+    button {
+        background-color: var(--color-3);
+        color: var(--color-0);
+        border: none;
+        font-size: 20px;
+    }
+}
