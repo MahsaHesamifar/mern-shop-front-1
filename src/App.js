@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Nav from './Components/Nav/Nav';
-import Toolbar from './Components/Toolbar/Toolbar';
 import Home from './pages/Home';
 import Authpage from './pages/Authpage';
 import Categories from './pages/Categories';
 import Basket from './pages/Basket';
 import profile from './pages/Profile';
 import Product from './pages/product';
-import Profile from './pages/Profile';
 import Footer from './Components/Footer';
+import Header from './Components/Header';
 import './style/app.scss';
 
 const App = () => {
@@ -25,22 +23,32 @@ const App = () => {
 
     return (
         <div className="app-container palette" data-theme-palette={palette}>
-            <div className="box-shadow">
-                <Nav />
-                <Toolbar themeHandler={themeHandler} theme={theme} />
-            </div>
-
             <div className="pages">
                 <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/Categories" component={Categories} />
+                    <Route path="/" exact>
+                        <Header themeHandler={themeHandler} theme={theme} />
+                        <Home />
+                        <Footer />
+                    </Route>
+                    <Route path="/Categories">
+                        <Header themeHandler={themeHandler} theme={theme} />
+                        <Categories />
+                        <Footer />
+                    </Route>
                     <Route path="/Authpage" component={Authpage} />
-                    <Route path="/Basket" component={Basket} />
+                    <Route path="/Basket">
+                        <Header themeHandler={themeHandler} theme={theme} />
+                        <Basket />
+                        <Footer />
+                    </Route>
                     <Route path="/Profile" component={profile} />
-                    <Route path="/Product" component={Product} />
+                    <Route path="/Product">
+                        <Header themeHandler={themeHandler} theme={theme} />
+                        <Product />
+                        <Footer />
+                    </Route>
                 </Switch>
             </div>
-            <Footer />
         </div>
     );
 };

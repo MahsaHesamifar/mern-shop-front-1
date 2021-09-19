@@ -6,6 +6,7 @@
 .palette {
     background-color: var(--color-1);
 }
+
 .app-container {
     transition: color 0.25s ease-in, background-color 0.25s ease-in;
 }
@@ -19,7 +20,8 @@
     z-index: 100;
 }
 .pages {
-    margin-top: 110px;
+    // margin-top: 110px;
+    padding-top: 110px;
 }
 
 // General:
