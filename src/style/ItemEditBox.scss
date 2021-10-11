@@ -1,9 +1,40 @@
 .itemEditBox-container {
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: gray;
+  position: absolute;
+  //   top: -50px;
+  top: 20px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .delete-btn,
+  .copy-btn {
+    display: none;
+  }
+  .btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    i {
+      color: rgb(240, 240, 240);
+    }
+    i:hover {
+      color: white;
+    }
+  }
+}
+.itemEditBox-container:hover {
+  width: 100px;
+  border-radius: 10px;
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  .edit-btn {
+    display: none;
+  }
+  .delete-btn,
+  .copy-btn {
+    display: flex;
+  }
 }
